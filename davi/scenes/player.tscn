@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://caprxdlchg4l1"]
+
+[ext_resource type="Script" uid="uid://crlxmpjdewaos" path="res://player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://i61jjcn6dige" path="res://assets/kenney_platformer-art-deluxe/Base pack/Player/p2_duck.png" id="2_qhqgy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dqkch"]
+radius = 40.04997
+
+[node name="Player" type="CharacterBody2D" unique_id=79252108]
+script = ExtResource("1_g2els")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1646632081]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1610488257]
+texture = ExtResource("2_qhqgy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2087768726]
+position = Vector2(-2, 3)
+shape = SubResource("CircleShape2D_dqkch")
